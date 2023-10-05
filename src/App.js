@@ -10,8 +10,8 @@ import './styles.css';
 function App() {
   return (
     <div className="App">
-      <Navbar /> 
-      <h1>Week 4 recap</h1>
+      
+      
       <section id="recap">
         <Recap />
       </section>
@@ -27,6 +27,7 @@ function App() {
       <section id="carp">
         <Projections />
       </section>
+      <Navbar /> 
     </div>
   );
 }

@@ -2,22 +2,35 @@ import React from "react";
 import './styles.css';
 
 function Navbar() {
+ 
+
   return (
     <nav className="sticky-navbar">
       <ul>
         <li>
-          <a href="#recap">Recap</a>
+          <a href="#recap" className="scroll-link">
+            Recap
+          </a>
         </li>
         <li>
-          <a href="#sweat">S.O.T.W.</a>
+          <a href="#sweat" className="scroll-link">
+            S.O.T.W.
+          </a>
         </li>
         <li>
-          <a href="#nuts">Top Plays</a>
+          <a href="#nuts" className="scroll-link">
+            Top Plays
+          </a>
         </li>
         <li>
-          <a href="#carp">Carp's Crown</a>
-        </li> <li>
-          <a href="#projections">Projections</a>
+          <a href="#carp" className="scroll-link">
+            Carp's Crown
+          </a>
+        </li>
+        <li>
+          <a href="#projections" className="scroll-link">
+            Projections
+          </a>
         </li>
       </ul>
     </nav>

@@ -15,7 +15,7 @@ const Projections = () => {
   ];
 
   return (
-    <div className="projection-table">
+    <div className="projection-table" id="projections">
       <h2>Projections</h2>
       <table>
         <thead>

@@ -30,7 +30,7 @@ const Nuts = () => {
   };
 
   return (
-    <div className="fantasy-football-table">
+    <div className="fantasy-football-table" id="nuts">
       <h2>Top Plays of Week 4</h2>
       <div className="positions-container">
         {Object.keys(topPlayers).map((position) => (
