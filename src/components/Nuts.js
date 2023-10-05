@@ -8,13 +8,13 @@ const Nuts = () => {
       { name: 'Justin Fields', fpts: 30.2, owner: 'Det', note: 'thanks nasty' },
     ],
     RB: [
-      { name: 'CMC', fpts: 48.7, owner: 'Deez' },
-      { name: 'Montgomery', fpts: 34.1, owner: 'AJ' },
+      { name: 'Christian McCaffrey', fpts: 48.7, owner: 'Deez' },
+      { name: 'David Montgomery', fpts: 34.1, owner: 'AJ' },
       { name: 'Josh Jacobs', fpts: 27.9, owner: 'Det' },
     ],
     WR: [
       { name: 'AJ Brown', fpts: 38.5, owner: 'AJ' },
-      { name: 'Diggs', fpts: 36, owner: 'Craig' },
+      { name: 'Stefon Diggs', fpts: 36, owner: 'Craig' },
       { name: 'Nico Collins', fpts: 35.8, owner: 'Wilding' },
     ],
     TE: [
