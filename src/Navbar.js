@@ -2,11 +2,9 @@ import React from "react";
 import './styles.css';
 
 function Navbar() {
- 
-
   return (
     <nav className="sticky-navbar">
-      <ul>
+      <ul className="navbar-links">
         <li>
           <a href="#recap" className="scroll-link">
             Recap
