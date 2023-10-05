@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Navbar /> 
-      <h1>Wednesdays Weekly Wrap Up</h1>
+      <h1>Week 4 recap</h1>
       <section id="recap">
         <Recap />
       </section>

@@ -32,25 +32,21 @@ const Nuts = () => {
   return (
     <div className="fantasy-football-table">
       <h2>Top Plays of Week 4</h2>
-      <table>
-        <tbody>
-          {Object.keys(topPlayers).map((position) => (
-            <tr key={position}>
-              <td>{position}</td>
-              <td>
-                <ol>
-                  {topPlayers[position].map((player, index) => (
-                    <li key={index}>
-                      {player.name} {player.fpts} - {player.owner}{' '}
-                      {player.note && `(${player.note})`}
-                    </li>
-                  ))}
-                </ol>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <div className="positions-container">
+        {Object.keys(topPlayers).map((position) => (
+          <div key={position} className="position">
+            <h3>{position}</h3>
+            <ol>
+              {topPlayers[position].map((player, index) => (
+                <li key={index}>
+                  {player.name} {player.fpts} - {player.owner}{' '}
+                  {player.note && `(${player.note})`}
+                </li>
+              ))}
+            </ol>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
