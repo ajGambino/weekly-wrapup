@@ -5,6 +5,7 @@ import Nuts from "./components/Nuts";
 import Recap from "./components/Recap";
 import Sweat from "./components/Sweat";
 import Projections from "./components/Projections";
+import './styles.css';
 
 function App() {
   return (
