@@ -8,10 +8,8 @@ import Projections from "./components/Projections";
 import './styles.css';
 
 function App() {
-  return (
-    <div className="App">
-      
-      
+  return ( <>
+    <div className="App body-padding">
       <section id="recap">
         <Recap />
       </section>
@@ -24,11 +22,11 @@ function App() {
       <section id="carp">
         <Carp />
       </section>
-      <section id="carp">
+      <section id="projections">
         <Projections />
       </section>
-      <Navbar /> 
     </div>
+    <Navbar /> </>
   );
 }
 
