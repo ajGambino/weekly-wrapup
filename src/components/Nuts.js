@@ -2,27 +2,27 @@ import React from 'react';
 
 const Nuts = () => {
   const topPlayers = {
-    Qb: [
+    QB: [
       { name: 'Josh Allen', fpts: 36.5, owner: 'AJ' },
       { name: 'Anthony Richardson', fpts: 32.1, owner: 'AJ' },
       { name: 'Justin Fields', fpts: 30.2, owner: 'Det', note: 'thanks nasty' },
     ],
-    Rb: [
+    RB: [
       { name: 'CMC', fpts: 48.7, owner: 'Deez' },
       { name: 'Montgomery', fpts: 34.1, owner: 'AJ' },
       { name: 'Josh Jacobs', fpts: 27.9, owner: 'Det' },
     ],
-    Wr: [
+    WR: [
       { name: 'AJ Brown', fpts: 38.5, owner: 'AJ' },
       { name: 'Diggs', fpts: 36, owner: 'Craig' },
       { name: 'Nico Collins', fpts: 35.8, owner: 'Wilding' },
     ],
-    Te: [
+    TE: [
       { name: 'Cole Kmet', fpts: 27.6, owner: 'Det', note: 'THANKS NASTY!' },
       { name: 'Mark Andrews', fpts: 25, owner: 'Craig' },
       { name: 'Jonnu Smith', fpts: 15.5, owner: 'FA' },
     ],
-    D: [
+    DST: [
       { name: 'Seahawks', fpts: 29, owner: 'Deez' },
       { name: 'Cowboys', fpts: 26, owner: 'Wilding' },
       { name: 'Jaguars', fpts: 21, owner: 'FA' },
