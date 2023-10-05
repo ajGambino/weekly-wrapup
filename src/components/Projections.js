@@ -17,6 +17,7 @@ const Projections = () => {
   return (
     <div className="projection-table" id="projections">
       <h2>Projections</h2>
+      <div className="projections-container">
       <table>
         <thead>
           <tr>
@@ -35,7 +36,7 @@ const Projections = () => {
           ))}
         </tbody>
       </table>
-    </div>
+    </div></div>
   );
 };
 

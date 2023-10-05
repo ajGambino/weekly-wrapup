@@ -36,14 +36,24 @@ const Nuts = () => {
         {Object.keys(topPlayers).map((position) => (
           <div key={position} className="position">
             <h3>{position}</h3>
-            <ol>
-              {topPlayers[position].map((player, index) => (
-                <li key={index}>
-                  {player.name} {player.fpts} - {player.owner}{' '}
-                  {player.note && `(${player.note})`}
-                </li>
-              ))}
-            </ol>
+            <table className="position-table">
+              <thead>
+                <tr>
+                  <th> </th>
+                  <th>fpts</th>
+                  <th>Owner</th>
+                </tr>
+              </thead>
+              <tbody>
+                {topPlayers[position].map((player, index) => (
+                  <tr key={index}>
+                    <td>{index + 1}. {player.name}</td>
+                    <td>{player.fpts}</td>
+                    <td>{player.owner}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         ))}
       </div>

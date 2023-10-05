@@ -9,7 +9,8 @@ import './styles.css';
 
 function App() {
   return ( <>
-    <div className="App body-padding">
+    <div className="App body-padding content-container">
+      <h1>Wednesday's Weekly Wrap-up</h1>
       <section id="recap">
         <Recap />
       </section>
