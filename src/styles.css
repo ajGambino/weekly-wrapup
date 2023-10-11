@@ -170,9 +170,13 @@ body {
   }
 
   .projection-table table {
-    font-size: 10px; 
+    font-size: 12px; 
+    text-shadow: 1px 1px 3px white; 
+    font-weight: 500;
+
   }
 
   #nuts {
     background-color: rgb(1, 140, 158);
+    
   }
