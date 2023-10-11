@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import Carp from "./components/Carp";
 import Nuts from "./components/Nuts";
 import Recap from "./components/Recap";
-import Sweat from "./components/Sweat";
+
 import Projections from "./components/Projections";
 import './styles.css';
 
@@ -12,7 +12,7 @@ function App() {
     <div className="App body-padding content-container">
      {/* <h1>Wednesday's Weekly Wrap-up</h1> */}
       <section id="recap">
-        <Recap />
+        <Recap /> 
       </section>
       {/* <section id="sweat">
         <Sweat />
