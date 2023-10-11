@@ -3,35 +3,35 @@ import React from 'react';
 const Nuts = () => {
   const topPlayers = {
     QB: [
-      { name: 'Josh Allen', fpts: 36.5, owner: 'AJ' },
-      { name: 'Anthony Richardson', fpts: 32.1, owner: 'AJ' },
-      { name: 'Justin Fields', fpts: 30.2, owner: 'Det', note: 'thanks nasty' },
+      { name: 'J. Fields', fpts: 33.0, owner: 'Det' },
+      { name: 'J. Allen', fpts: 28.8, owner: 'AJ' },
+      { name: 'J. Hurts', fpts: 28.3, owner: 'Det', },
     ],
     RB: [
-      { name: 'Christian McCaffrey', fpts: 48.7, owner: 'Deez' },
-      { name: 'David Montgomery', fpts: 34.1, owner: 'AJ' },
-      { name: 'Josh Jacobs', fpts: 27.9, owner: 'Det' },
+      { name: 'T. Etienne', fpts: 36.4, owner: 'Greg' },
+      { name: 'Z. Moss', fpts: 33.5, owner: 'Bosko' },
+      { name: 'B. Hall', fpts: 28.4, owner: 'Craig' },
     ],
     WR: [
-      { name: 'AJ Brown', fpts: 38.5, owner: 'AJ' },
-      { name: 'Stefon Diggs', fpts: 36, owner: 'Craig' },
-      { name: 'Nico Collins', fpts: 35.8, owner: 'Wilding' },
+      { name: 'J. Chase', fpts: 52.2, owner: 'Fajt' },
+      { name: 'D. Moore', fpts: 49, owner: 'Craig' },
+      { name: 'T. Hill', fpts: 32.1, owner: 'Deez' },
     ],
     TE: [
-      { name: 'Cole Kmet', fpts: 27.6, owner: 'Det', note: 'THANKS NASTY!' },
-      { name: 'Mark Andrews', fpts: 25, owner: 'Craig' },
-      { name: 'Jonnu Smith', fpts: 15.5, owner: 'FA' },
+      { name: 'G. Kittle', fpts: 27.7, owner: 'Fajt' },
+      { name: 'D. Goedert', fpts: 25.7, owner: 'Wilding' },
+      { name: 'T. Kelce', fpts: 22.7, owner: 'AJ' },
     ],
     DST: [
-      { name: 'Seahawks', fpts: 29, owner: 'Deez' },
-      { name: 'Cowboys', fpts: 26, owner: 'Wilding' },
-      { name: 'Jaguars', fpts: 21, owner: 'FA' },
+      { name: 'Saints', fpts: 22, owner: 'Greg' },
+      { name: '49ers', fpts: 18, owner: 'Det' },
+      { name: 'Jets', fpts: 18, owner: 'Craig' },
     ],
   };
 
   return (
     <div className="fantasy-football-table" id="nuts">
-      <h2>Top Plays of Week 4</h2>
+      <h2>Top Plays of Week 5</h2>
       <div className="positions-container">
         {Object.keys(topPlayers).map((position) => (
           <div key={position} className="position">

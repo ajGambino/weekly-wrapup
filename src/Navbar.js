@@ -11,9 +11,9 @@ function Navbar() {
           </a>
         </li>
         <li>
-          <a href="#sweat" className="scroll-link">
+        {/*  <a href="#sweat" className="scroll-link">
             S.O.T.W.
-          </a>
+          </a> */}
         </li>
         <li>
           <a href="#nuts" className="scroll-link">

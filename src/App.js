@@ -10,13 +10,13 @@ import './styles.css';
 function App() {
   return ( <>
     <div className="App body-padding content-container">
-      <h1>Wednesday's Weekly Wrap-up</h1>
+     {/* <h1>Wednesday's Weekly Wrap-up</h1> */}
       <section id="recap">
         <Recap />
       </section>
-      <section id="sweat">
+      {/* <section id="sweat">
         <Sweat />
-      </section>
+      </section> */}
       <section id="nuts">
         <Nuts />
       </section>

@@ -123,15 +123,51 @@ body {
 
   .position-table {
     width: 100%;
-    table-layout: auto; /* Set the table layout to "auto" for equal column widths */
+    table-layout: auto;  
   }
   
   .position-table th,
   .position-table td {
-    width: 33%; /* Divide the width equally among three columns */
+    width: 33%; 
     text-align: center;
     padding: 5px;
-    white-space: nowrap; /* Prevent text from wrapping */
-    overflow: hidden; /* Hide any overflowing text */
+    white-space: nowrap; 
+    overflow: hidden; 
     text-overflow: ellipsis;
+  }
+
+
+  #carp {
+    background-image: url('https://i.ibb.co/BPJm0xL/Mcdaniels.jpg');
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    color: black; 
+    text-shadow: 1px 1px 3px white; 
+    font-weight: 500;
+   
+  }
+
+  #recap {
+    background-image: url("https://i.ibb.co/WpL9TsN/FF-BG.jpg");
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    text-shadow: 
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+  color: white;
+  }
+
+  #projections {
+  
+        background-image: url("https://i.ibb.co/1vW8S4s/math.png");
+        background-size: cover; 
+        background-position: center center; 
+        background-repeat: no-repeat;
+        color: black; 
+        text-shadow: 1px 1px 3px white; 
+        font-weight: 500;
   }
