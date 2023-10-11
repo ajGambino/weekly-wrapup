@@ -172,3 +172,7 @@ body {
   .projection-table table {
     font-size: 10px; 
   }
+
+  #nuts {
+    background-color: rgb(1, 140, 158);
+  }

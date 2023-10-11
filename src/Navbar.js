@@ -10,11 +10,11 @@ function Navbar() {
             Recap
           </a>
         </li>
-        <li>
-        {/*  <a href="#sweat" className="scroll-link">
+       {/*  <li>
+         <a href="#sweat" className="scroll-link">
             S.O.T.W.
-          </a> */}
-        </li>
+          </a> 
+        </li> */}
         <li>
           <a href="#nuts" className="scroll-link">
             Top Plays
