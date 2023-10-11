@@ -5,7 +5,7 @@ const Carp = () => {
     <div id="carp">
     <h2>Carp's Crown</h2>
     <p> I'm crowning Josh Mcdaniels this week, for attempting a 52yd FG instead of going for it on 4th and 2 at the 34 on MNF. 
-        To be fair I thought the decision was much worse than it was in real time. Why are teams paying for full teams of statistical analysts
+     Why are teams paying for statistical analysts
          if the coach isn't going 
         to listen to them? You give yourself a better chance to win 
         the game by PUNTING than kicking the FG, but by a clear margin the most +EV play here is to obviously go for it. 

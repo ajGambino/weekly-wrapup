@@ -15,7 +15,7 @@ body {
     position: sticky;
     bottom: 0;
     background-color: #333;
-    padding: 10px;
+    padding: 5px;
     z-index: 1000;
   }
   
@@ -160,7 +160,7 @@ body {
 
   #projections {
   
-        background-image: url("https://i.ibb.co/1vW8S4s/math.png");
+        background-image: url("https://i.ibb.co/sjT6YNR/math.png");
         background-size: cover; 
         background-position: center center; 
         background-repeat: no-repeat;
@@ -180,3 +180,4 @@ body {
     background-color: rgb(1, 140, 158);
     
   }
+
