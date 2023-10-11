@@ -153,12 +153,9 @@ body {
     background-size: cover; 
     background-position: center center; 
     background-repeat: no-repeat;
-    text-shadow: 
-    -1px -1px 0 black,
-    1px -1px 0 black,
-    -1px 1px 0 black,
-    1px 1px 0 black;
-  color: white;
+    color: black; 
+    text-shadow: 1px 1px 3px white; 
+    font-weight: 500;
   }
 
   #projections {
@@ -170,4 +167,8 @@ body {
         color: black; 
         text-shadow: 1px 1px 3px white; 
         font-weight: 500;
+  }
+
+  .projection-table table {
+    font-size: 10px; 
   }
