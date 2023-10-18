@@ -195,7 +195,7 @@ font-weight: 500;
   padding: 2px; 
   color: white;
   text-align: center;
-  
+  font-size: 10px;
 }
 
 .footer-content {
@@ -209,6 +209,7 @@ font-weight: 500;
   text-decoration: none;
   transition: color 0.3s;
   margin: 0 10px;
+  font-size: 20px;
 }
 
 .footer a:hover {
