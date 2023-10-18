@@ -1,46 +1,75 @@
 import React from 'react';
+import { getFirestore, collection, doc, setDoc } from 'firebase/firestore';
+import { firestore } from '../firebase';
+
+
+const projectionData = [
+  { name: 'Det', projRecord: '10-4', playoffOdds: '98%', rankChange: '--', champion: '22%' },
+  { name: 'Fajt', projRecord: '9-5', playoffOdds: '95%', rankChange: "--", champion:'15%'  },
+  { name: 'Deez', projRecord: '8-6', playoffOdds: '88%', rankChange: "--", champion: '14%' },
+  { name: 'AJ', projRecord: '7-7', playoffOdds: '82%', rankChange: "+3", champion: '24%' },
+  { name: 'Cleve', projRecord: '7-7', playoffOdds: '82%', rankChange: "-1", champion: '13%'  },
+  { name: 'Craig', projRecord: '7-7', playoffOdds: '57%', rankChange: "-1", champion: '5%' },
+  { name: 'B', projRecord: '6-8', playoffOdds: '37%', rankChange: "+1", champion: '3%' },
+  { name: 'G $', projRecord: '6-8', playoffOdds: '32%', rankChange: "+1", champion: '3%' },
+  { name: 'Wildman', projRecord: '6-8', playoffOdds: '29%', rankChange: "-3", champion: '1%' },
+  { name: 'Na$$ty', projRecord: '3-11', playoffOdds: '3%', rankChange: "--", champion: '<1%' },
+];
+
+const weekNumber = 'Week7'; 
+
+const saveProjectionData = async (data, week) => {
+  
+  const weekCollection = collection(firestore, 'Weeks');
+
+ 
+  const weekDoc = doc(weekCollection, week);
+
+  // Set the data for the document with merge: true to keep existing fields
+  setDoc(weekDoc, { projectionData: data }, { merge: true })
+    .then(() => {
+      console.log(`Projection data added to ${week}`);
+    }) 
+    .catch((error) => {
+      console.error(`Error adding projection data to ${week}:`, error);
+    });
+};
 
 const Projections = () => {
-  const projectionData = [
-    { name: 'Det', projRecord: '9-5', playoffOdds: '93%', rankChange: '+1', champion: '19%' },
-    { name: 'Fajt', projRecord: '9-5', playoffOdds: '88%', rankChange: "-1", champion:'13%'  },
-    { name: 'Bosko', projRecord: '8-6', playoffOdds: '87%', rankChange: "+1", champion: '17%'  },
-    { name: 'AJ', projRecord: '8-6', playoffOdds: '84%', rankChange: "+2", champion: '25%' },
-    { name: 'Deez', projRecord: '8-6', playoffOdds: '78%', rankChange: "-2", champion: '11%' },
-    { name: 'Brian', projRecord: '7-7', playoffOdds: '51%', rankChange: "+1", champion: '5%' },
-    { name: 'Greg', projRecord: '7-7', playoffOdds: '50%', rankChange: "+1", champion: '6%' },
-    { name: 'Craig', projRecord: '6-8', playoffOdds: '37%', rankChange: "+1", champion: '3%' },
-    { name: 'Wilding', projRecord: '6-8', playoffOdds: '31%', rankChange: "-4", champion: '1%' },
-    { name: 'Nasty', projRecord: '3-11', playoffOdds: '<1%', rankChange: "--", champion: '<1%' },
-  ];
+  const handleSaveData = () => {
+    
+    saveProjectionData(projectionData, weekNumber);
+  };
 
   return (
     <div className="projection-table" id="projections">
       <h2>Projections</h2>
+     {/* <button onClick={handleSaveData}>Save Data to Firestore for Week {weekNumber}</button> */ }
       <div className="projections-container">
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Proj. Record</th>
-            <th>Playoff Odds</th>
-            <th>Rank Change</th>
-            <th>Champion</th>
-          </tr>
-        </thead>
-        <tbody>
-          {projectionData.map((player, index) => (
-            <tr key={index}>
-              <td>{player.name}</td>
-              <td>{player.projRecord}</td>
-              <td>{player.playoffOdds}</td>
-              <td>{player.rankChange}</td>
-              <td>{player.champion}</td>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Proj. Record</th>
+              <th>Playoff Odds</th>
+              <th>Rank Change</th>
+              <th>Champion</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
-    </div></div>
+          </thead>
+          <tbody>
+            {projectionData.map((player, index) => (
+              <tr key={index}>
+                <td>{player.name}</td>
+                <td>{player.projRecord}</td>
+                <td>{player.playoffOdds}</td>
+                <td>{player.rankChange}</td>
+                <td>{player.champion}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
   );
 };
 

@@ -1,4 +1,5 @@
 /* Nav styles */
+
 body {
     scroll-behavior: smooth;
   }
@@ -13,7 +14,7 @@ body {
 
   .sticky-navbar {
     position: sticky;
-    bottom: 0;
+    top: 0;
     background-color: #333;
     padding: 5px;
     z-index: 1000;
@@ -30,7 +31,7 @@ body {
   .sticky-navbar li,
   .navbar-links li {
     margin: 0;
-    flex: 1; /* Equal width for each link */
+    flex: 1; 
   }
   
   .sticky-navbar a,
@@ -48,6 +49,7 @@ body {
   }
   
   /* Top plays styles */
+
   .fantasy-football-table {
     font-family: Arial, sans-serif;
     padding: 20px;
@@ -87,8 +89,15 @@ body {
   .body-padding {
     padding: 1rem;
   }
-  
-  
+
+  #nuts {
+    background-color: rgb(1, 140, 158);
+    margin: .2rem;
+    padding: .5rem; 
+  }
+
+  /* projections styles */
+
   .projections-container {
     display: flex;
     flex-direction: column;
@@ -96,8 +105,6 @@ body {
     text-align: center;
   }
   
-
-
 .projection-table table {
     width: 100%; 
     border-collapse: collapse; 
@@ -108,12 +115,10 @@ body {
     padding: 10px; 
   }
   
- 
 .fantasy-football-table table th {
     font-size: 14px; 
   }
   
-
   .position-rows {
     display: flex;
     flex-direction: column;
@@ -136,48 +141,81 @@ body {
     text-overflow: ellipsis;
   }
 
-
-  #carp {
-    background-image: url('https://i.ibb.co/BPJm0xL/Mcdaniels.jpg');
+  #projections {
+    background-image: url("https://i.ibb.co/B6jPY45/math.png");
     background-size: cover; 
     background-position: center center; 
     background-repeat: no-repeat;
     color: black; 
-    text-shadow: 1px 1px 3px white; 
     font-weight: 500;
-   
-  }
+    margin: .2rem;
+    padding: .5rem;
+}
+
+.projection-table table {
+font-size: 12px; 
+text-shadow: 1px 1px 3px white; 
+font-weight: 500;
+
+}
+
+/*Carps Crown styles*/
+
+#carp {
+  background-image: url("https://i.ibb.co/GMbcRRM/crown.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: black;
+  margin: .2rem;
+  padding: .5rem;
+  font-weight: 500;
+  margin-bottom: 20px; 
+}
+
+
+/*Recap styles */
 
   #recap {
-    background-image: url("https://i.ibb.co/WpL9TsN/FF-BG.jpg");
-    background-size: cover; 
-    background-position: center center; 
-    background-repeat: no-repeat;
     color: black; 
-    text-shadow: 1px 1px 3px white; 
-    font-weight: 500;
-  }
-
-  #projections {
-  
-        background-image: url("https://i.ibb.co/sjT6YNR/math.png");
-        background-size: cover; 
-        background-position: center center; 
-        background-repeat: no-repeat;
-        color: black; 
-        text-shadow: 1px 1px 3px white; 
-        font-weight: 500;
-  }
-
-  .projection-table table {
-    font-size: 12px; 
-    text-shadow: 1px 1px 3px white; 
-    font-weight: 500;
-
-  }
-
-  #nuts {
     background-color: rgb(1, 140, 158);
-    
+    margin: .2rem;
+    padding: .1rem;
   }
 
+
+
+  /* footer styles */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 2px; 
+  color: white;
+  text-align: center;
+  
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  color: #FFA500;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 40px; 
+}

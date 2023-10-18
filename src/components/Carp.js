@@ -1,18 +1,36 @@
-import React from 'react'
-
+import React, { useEffect, useState } from 'react';
+import { collection, doc, getDoc } from 'firebase/firestore';
+import { firestore, app } from '../firebase'; 
 const Carp = () => {
+  const [crownContent, setCrownContent] = useState('');
+
+  useEffect(() => {
+    
+    const weekNumber = 'Week7'; 
+
+    const weeksCollection = collection(firestore, 'Weeks'); 
+    const week7Doc = doc(weeksCollection, weekNumber); 
+    
+    getDoc(week7Doc)
+      .then((doc) => {
+        if (doc.exists()) {
+          setCrownContent(doc.data().crown);
+        } else {
+          setCrownContent('Carps Crown not found');
+        }
+      })
+      .catch((error) => {
+        console.error('Error getting Crown content:', error);
+        setCrownContent('Error fetching Crown content');
+      });
+  }, []);
+
   return (
     <div id="carp">
-    <h2>Carp's Crown</h2>
-    <p> I'm crowning Josh Mcdaniels this week, for attempting a 52yd FG instead of going for it on 4th and 2 at the 34 on MNF. 
-     Why are teams paying for statistical analysts
-         if the coach isn't going 
-        to listen to them? You give yourself a better chance to win 
-        the game by PUNTING than kicking the FG, but by a clear margin the most +EV play here is to obviously go for it. 
+      <h1>Carp's Crown</h1>
+      <p>{crownContent}</p>
+    </div>
+  );
+};
 
-        Win % is 3% higher if you fail to convert vs fail the FG, and 8% higher if you succeed the 4th down vs make the FG. These may seem like
-        small edges, but this is the NFL and the difference in these decisions is inexcusable when you are coaching at the highest level. Sadly, none of it mattered despite missing the kick because math is dumb. Where's the justice?  </p>
-    </div> )
-}
-
-export default Carp
+export default Carp;
