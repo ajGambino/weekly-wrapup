@@ -50,15 +50,15 @@ const Nuts = () => {
       });
   };
 
- /* const handleSaveData = () => {
+  const handleSaveData = () => {
 
     saveTopPlayersData(weekNumber, topPlayers);
   };
-*/
+
   return (
     <div className="fantasy-football-table" id="nuts">
       <h2>Top Plays</h2>
-     {/*  <button onClick={handleSaveData}>Save Data to Firestore</button>*/}
+      <button onClick={handleSaveData}>Save Data to Firestore</button>
       <div className="positions-container">
         {Object.keys(topPlayers).map((position) => (
           <div key={position} className="position">
