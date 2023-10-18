@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer-content">
       <p>&copy; {new Date().getFullYear()} The Resurrection. All rights reserved.</p>
         <a
-          href="https://github.com/"
+          href="https://github.com/ajGambino/weekly-wrapup"
           target="_blank"
           rel="noopener noreferrer"
         >
