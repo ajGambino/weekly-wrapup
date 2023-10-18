@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import Carp from "./components/Carp";
 import Nuts from "./components/Nuts";
 import Recap from "./components/Recap";
-import Sweat from "./components/Sweat";
+/* import Sweat from "./components/Sweat"; */
 import Footer from "./Footer";
 
 import Projections from "./components/Projections";

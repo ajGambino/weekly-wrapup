@@ -1,5 +1,5 @@
 import React from 'react';
-import { getFirestore, collection, doc, setDoc } from 'firebase/firestore';
+import {  doc, setDoc } from 'firebase/firestore';
 import { firestore } from '../firebase';
 
 const Nuts = () => {
@@ -50,11 +50,11 @@ const Nuts = () => {
       });
   };
 
-  const handleSaveData = () => {
+ /* const handleSaveData = () => {
 
     saveTopPlayersData(weekNumber, topPlayers);
   };
-
+*/
   return (
     <div className="fantasy-football-table" id="nuts">
       <h2>Top Plays</h2>

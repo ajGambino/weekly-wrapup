@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { collection, doc, getDoc } from 'firebase/firestore';
-import { firestore, app } from '../firebase'; 
+import { firestore } from '../firebase'; 
 const Carp = () => {
   const [crownContent, setCrownContent] = useState('');
 

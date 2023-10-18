@@ -1,5 +1,5 @@
 import React from 'react';
-import { getFirestore, collection, doc, setDoc } from 'firebase/firestore';
+import { collection, doc, setDoc } from 'firebase/firestore';
 import { firestore } from '../firebase';
 
 
@@ -44,7 +44,7 @@ const Projections = () => {
   return (
     <div className="projection-table" id="projections">
       <h2>Projections</h2>
-     {/* <button onClick={handleSaveData}>Save Data to Firestore for Week {weekNumber}</button> */ }
+      <button onClick={handleSaveData}>Save Data to Firestore for {weekNumber}</button> 
       <div className="projections-container">
         <table>
           <thead>
