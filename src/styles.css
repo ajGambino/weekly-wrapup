@@ -233,11 +233,11 @@ html {
   display: flex;
   margin: 10px;
   border: 1px solid #ccc;
-  padding: 15px;
+  padding: .5rem 2rem;
   border-radius: 50px;
   align-items: center;
-  justify-content: space-around;
-  width: 80%;
+  justify-content: space-between;
+  width: 100cqb;
 }
 
 .favorite-box {
@@ -265,7 +265,14 @@ html {
 .box1, .box2, .box3 {
   border-right: solid 2px black;
   border-radius: 1rem;
-  padding: 1rem;
+}
+
+.box1, .box2 {
+  padding: .5rem 2rem;
+}
+
+.box3 {
+  padding: .5rem .5rem;
 }
 
 .box1:hover, .box2:hover {
@@ -274,5 +281,7 @@ html {
 
 .total-box:hover {
   background:#bcffb4;
+  border-radius: .8rem;
+  
 }
 
