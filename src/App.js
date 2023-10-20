@@ -15,7 +15,11 @@ function App() {
   <Navbar />
     <div className="App body-padding content-container">
      {/* <h1>Wednesday's Weekly Wrap-up</h1> */}
-      <section id="recap">
+       <section id="sportsbook" >
+        <Sportsbook />
+      </section>
+      
+       <section id="recap">
         <Recap /> 
       </section>
       
@@ -33,9 +37,7 @@ function App() {
        <section id="sweat">
      {/*   <Sweat /> */}
       </section> 
-      <section id="sportsbook" >
-        <Sportsbook />
-      </section>
+      
       <Footer />
      </>
   );
