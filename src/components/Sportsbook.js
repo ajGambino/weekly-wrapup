@@ -28,14 +28,29 @@ const Sportsbook = () => {
       <div className="matchups-container">
         {matchups.map((matchup, index) => (
           <div key={index} className="matchup">
-            <div className="favorite-box">
-              {matchup.favorite} -{matchup.spread}
+            <div className="box1">
+              <div className="favorite-box">
+                {matchup.favorite}
+              </div>
+              <div className="spread-box">
+                -{matchup.spread}
+              </div>
             </div>
-            <div className="dog-box">
-              {matchup.dog} +{matchup.spread}
+            <div className="box2">
+              <div className="dog-box">
+                {matchup.dog}
+              </div>
+              <div className="spread-box">
+                +{matchup.spread}
+              </div>
             </div>
-            <div className="total-box">
-              O/U: {matchup.total}
+            <div className="box3">
+              <div className="total-box">
+                Over: {matchup.total}
+              </div>
+              <div className="total-box">
+                Under: {matchup.total}
+              </div>
             </div>
           </div>
         ))}

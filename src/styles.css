@@ -224,32 +224,55 @@ html {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 3rem;
+  justify-content: center;
+  align-items: center;
+ 
 }
 
 .matchup {
   display: flex;
   margin: 10px;
   border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 15px;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
 }
 
 .favorite-box {
   flex: 1;
-  border-right: 1px solid #ccc;
   padding: 5px;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .dog-box {
   flex: 1;
-  border-right: 1px solid #ccc;
   padding: 5px;
   text-align: center;
+ 
 }
 
 .total-box {
   flex: 1;
   padding: 5px;
   text-align: center;
+  
 }
+
+.box1, .box2, .box3 {
+  border-right: solid 2px black;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.box1:hover, .box2:hover {
+  background:#bcffb4;
+}
+
+.total-box:hover {
+  background:#bcffb4;
+}
+
