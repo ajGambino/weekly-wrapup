@@ -8,6 +8,7 @@ import Footer from "./Footer";
 
 import Projections from "./components/Projections";
 import './styles.css';
+import Sportsbook from "./components/Sportsbook";
 
 function App() {
   return ( <>
@@ -17,9 +18,11 @@ function App() {
       <section id="recap">
         <Recap /> 
       </section>
+      
       <section id="projections">
         <Projections />
       </section>
+    
       <section id="nuts">
         <Nuts />
       </section>
@@ -30,6 +33,9 @@ function App() {
        <section id="sweat">
      {/*   <Sweat /> */}
       </section> 
+      <section id="sportsbook" >
+        <Sportsbook />
+      </section>
       <Footer />
      </>
   );

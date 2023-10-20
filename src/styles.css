@@ -170,7 +170,6 @@ font-weight: 500;
   margin: .2rem;
   padding: .5rem;
   font-weight: 500;
-  margin-bottom: 20px; 
 }
 
 
@@ -219,4 +218,38 @@ font-weight: 500;
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 40px; 
+}
+
+.matchups-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.matchup {
+  display: flex;
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.favorite-box {
+  flex: 1;
+  border-right: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+}
+
+.dog-box {
+  flex: 1;
+  border-right: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+}
+
+.total-box {
+  flex: 1;
+  padding: 5px;
+  text-align: center;
 }

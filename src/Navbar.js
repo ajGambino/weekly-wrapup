@@ -10,6 +10,11 @@ function Navbar() {
             Recap
           </a>
         </li>
+        <li>
+          <a href="#projections" className="scroll-link">
+            Projections
+          </a>
+        </li>
        {/*  <li>
          <a href="#sweat" className="scroll-link">
             S.O.T.W.
@@ -26,8 +31,8 @@ function Navbar() {
           </a>
         </li>
         <li>
-          <a href="#projections" className="scroll-link">
-            Projections
+          <a href="#sportsbook" className="scroll-link">
+            Degen
           </a>
         </li>
       </ul>
