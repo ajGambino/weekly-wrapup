@@ -231,12 +231,13 @@ html {
 
 .matchup {
   display: flex;
-  margin: 10px;
-  border-top: 1px solid #ccc;
-  padding: .5rem 2rem;
-  border-radius: 1rem;
+ margin: 5px 10px;
+  border: 1px solid #ccc;
+  padding: .3rem 1rem;
+  border-radius: 2rem;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .favorite-box {
