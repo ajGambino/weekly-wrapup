@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-      <p>&copy; {new Date().getFullYear()} The Resurrection. All rights reserved.</p>
+      <p>&copy; {new Date().getFullYear()} The Resurrection.</p>
         <a
           href="https://github.com/ajGambino/weekly-wrapup"
           target="_blank"

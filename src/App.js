@@ -5,7 +5,6 @@ import Nuts from "./components/Nuts";
 import Recap from "./components/Recap";
 /* import Sweat from "./components/Sweat"; */
 import Footer from "./Footer";
-
 import Projections from "./components/Projections";
 import './styles.css';
 import Sportsbook from "./components/Sportsbook";
@@ -14,25 +13,19 @@ function App() {
   return ( <>
   <Navbar />
     <div className="App body-padding content-container">
-     {/* <h1>Wednesday's Weekly Wrap-up</h1> */}
       <section id="recap">
-        <Recap /> 
+        <Recap weekNumber="Week7" /> 
       </section>
-      
       <section id="projections">
-        <Projections />
+        <Projections weekNumber="Week7"/>
       </section>
-    
       <section id="nuts">
-        <Nuts />
+        <Nuts  weekNumber="Week7" />
       </section>
       <section id="carp">
-        <Carp />
+        <Carp weekNumber="Week7"/>
       </section>
     </div>
-       <section id="sweat">
-     {/*   <Sweat /> */}
-      </section> 
       <section id="sportsbook" >
         <Sportsbook />
       </section>

@@ -237,7 +237,7 @@ html {
   border-radius: 2rem;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
+ 
 }
 
 .favorite-box {
@@ -277,11 +277,12 @@ html {
 
 .box1:hover, .box2:hover {
   background:#bcffb4;
+  cursor: pointer;
 }
 
 .total-box:hover {
   background:#bcffb4;
   border-radius: .8rem;
-  
+  cursor: pointer;
 }
 

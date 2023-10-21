@@ -15,11 +15,6 @@ function Navbar() {
             Projections
           </a>
         </li>
-       {/*  <li>
-         <a href="#sweat" className="scroll-link">
-            S.O.T.W.
-          </a> 
-        </li> */}
         <li>
           <a href="#nuts" className="scroll-link">
             Top Plays
@@ -33,6 +28,11 @@ function Navbar() {
         <li>
           <a href="#sportsbook" className="scroll-link">
             Degen
+          </a>
+        </li>
+        <li>
+          <a>
+            Archive
           </a>
         </li>
       </ul>

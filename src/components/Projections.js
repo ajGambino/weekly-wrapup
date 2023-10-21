@@ -1,50 +1,35 @@
-import React from 'react';
-import { collection, doc, setDoc } from 'firebase/firestore';
+import React, { useEffect, useState } from 'react';
+import { collection, doc, getDoc } from 'firebase/firestore';
 import { firestore } from '../firebase';
 
+const Projections = ({ weekNumber }) => {
+  const [projectionData, setProjectionData] = useState([]);
 
-const projectionData = [
-  { name: 'Det', projRecord: '10-4', playoffOdds: '98%', rankChange: '--', champion: '22%' },
-  { name: 'Fajt', projRecord: '9-5', playoffOdds: '95%', rankChange: "--", champion:'15%'  },
-  { name: 'Deez', projRecord: '8-6', playoffOdds: '88%', rankChange: "--", champion: '14%' },
-  { name: 'AJ', projRecord: '7-7', playoffOdds: '82%', rankChange: "+3", champion: '24%' },
-  { name: 'Cleve', projRecord: '7-7', playoffOdds: '82%', rankChange: "-1", champion: '13%'  },
-  { name: 'Craig', projRecord: '7-7', playoffOdds: '57%', rankChange: "-1", champion: '5%' },
-  { name: 'B', projRecord: '6-8', playoffOdds: '37%', rankChange: "+1", champion: '3%' },
-  { name: 'G $', projRecord: '6-8', playoffOdds: '32%', rankChange: "+1", champion: '3%' },
-  { name: 'Wildman', projRecord: '6-8', playoffOdds: '29%', rankChange: "-3", champion: '1%' },
-  { name: 'Na$$ty', projRecord: '3-11', playoffOdds: '3%', rankChange: "--", champion: '<1%' },
-];
+  useEffect(() => {
+    // Create a reference to the Firestore document based on the weekNumber
+    const weekDocRef = doc(firestore, 'Weeks', weekNumber);
 
-const weekNumber = 'Week7'; 
+    // Fetch the data for the specified week from Firestore
+    const fetchData = async () => {
+      try {
+        const docSnapshot = await getDoc(weekDocRef);
+        if (docSnapshot.exists()) {
+          const data = docSnapshot.data().projectionData;
+          setProjectionData(data);
+        } else {
+          console.log('No data found for the specified week.');
+        }
+      } catch (error) {
+        console.error('Error fetching projection data:', error);
+      }
+    };
 
-const saveProjectionData = async (data, week) => {
-  
-  const weekCollection = collection(firestore, 'Weeks');
-
- 
-  const weekDoc = doc(weekCollection, week);
-
-  // Set the data for the document with merge: true to keep existing fields
-  setDoc(weekDoc, { projectionData: data }, { merge: true })
-    .then(() => {
-      console.log(`Projection data added to ${week}`);
-    }) 
-    .catch((error) => {
-      console.error(`Error adding projection data to ${week}:`, error);
-    });
-};
-
-const Projections = () => {
-  const handleSaveData = () => {
-    
-    saveProjectionData(projectionData, weekNumber);
-  };
+    fetchData();
+  }, [weekNumber]);
 
   return (
     <div className="projection-table" id="projections">
       <h2>Projections</h2>
-      <button onClick={handleSaveData}>Save Data to Firestore for {weekNumber}</button> 
       <div className="projections-container">
         <table>
           <thead>
