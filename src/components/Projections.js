@@ -36,7 +36,6 @@ const Projections = ({ weekNumber }) => {
               <th>Name</th>
               <th>Proj. Record</th>
               <th>Playoff Odds</th>
-              <th>Rank Change</th>
               <th>Champion</th>
             </tr>
           </thead>
@@ -46,7 +45,6 @@ const Projections = ({ weekNumber }) => {
                 <td>{player.name}</td>
                 <td>{player.projRecord}</td>
                 <td>{player.playoffOdds}</td>
-                <td>{player.rankChange}</td>
                 <td>{player.champion}</td>
               </tr>
             ))}
