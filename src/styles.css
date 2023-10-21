@@ -67,7 +67,7 @@ body {
   .position {
     margin: 10px;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid white;
     border-radius: 5px;
     flex: 1;
     min-width: 13rem;
@@ -178,10 +178,11 @@ font-weight: 500;
 /*Recap styles */
 
   #recap {
-    color: black; 
-    
+    color: white; 
+    border: 1px solid white;
     margin: .2rem;
-    padding: .1rem;
+    padding: .5rem;
+    text-shadow: 1px 1px black;
   }
 
 
@@ -234,7 +235,7 @@ html {
 .matchup {
   display: flex;
  margin: 5px 10px;
-  border: 1px solid #ccc;
+  border: 1px solid white;
   padding: .3rem 1rem;
   border-radius: 2rem;
   align-items: center;
