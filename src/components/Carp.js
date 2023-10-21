@@ -24,7 +24,7 @@ const Carp = ({ weekNumber }) => {
   }, [weekNumber]);
 
   return (
-    <div id="carp">
+    <div id="">
       <h2>Carp's Crown</h2>
       <p>{crownContent}</p>
     </div>

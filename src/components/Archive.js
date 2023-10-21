@@ -5,6 +5,7 @@ import Recap from "./Recap";
 import Projections from "./Projections";
 
 
+
 function Archive() {
   return (
     <div>
@@ -13,7 +14,7 @@ function Archive() {
         <section id="recap">
           <Recap weekNumber="Week6" />
         </section>
-        <section id="projections">
+        <section >
           <Projections weekNumber="Week6" />
         </section>
         <section id="nuts">
@@ -24,18 +25,18 @@ function Archive() {
         </section>
       </div>
       <h1>Week 5</h1>
-      <div className="App body-padding content-container">
+      <div className="App body-padding content-container ">
         <section id="recap">
           <Recap weekNumber="Week5" />
         </section>
-        <section id="projections">
+        <section id="">
           <Projections weekNumber="Week5" />
         </section>
         <section id="nuts">
           <Nuts weekNumber="Week5" />
         </section>
-        <section id="carp">
-          <Carp weekNumber="Week5" />
+        <section  id="carp">
+          <Carp  weekNumber="Week5" />
         </section>
       </div>
     </div>

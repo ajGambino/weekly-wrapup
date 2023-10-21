@@ -147,10 +147,6 @@ body {
   }
 
   #projections {
-    background-image: url("https://i.ibb.co/B6jPY45/math.png");
-    background-size: cover; 
-    background-position: center center; 
-    background-repeat: no-repeat;
     color: black; 
     font-weight: 500;
     margin: .2rem;
@@ -161,6 +157,10 @@ body {
 font-size: 12px; 
 text-shadow: 1px 1px 3px white; 
 font-weight: 500;
+background-image: url("https://i.ibb.co/B6jPY45/math.png");
+background-size: cover; 
+background-position: center center; 
+background-repeat: no-repeat;
 
 }
 
@@ -173,7 +173,7 @@ font-weight: 500;
   background-repeat: no-repeat;
   color: black;
   margin: .2rem;
-  padding: .5rem;
+  padding: 3rem;
   font-weight: 500;
 }
 
@@ -225,6 +225,9 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 40px; 
 }
+
+
+/*Sportsbook*/
 
 .matchups-container {
   display: flex;
@@ -310,4 +313,9 @@ h2 {
   background-clip: text;
   -webkit-background-clip: text;
   
+}
+
+.red {
+  background-color: red;
+  border: 20px solid  #005204;
 }
