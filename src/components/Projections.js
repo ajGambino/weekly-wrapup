@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { collection, doc, getDoc } from 'firebase/firestore';
+import {  doc, getDoc } from 'firebase/firestore';
 import { firestore } from '../firebase';
 
 const Projections = ({ weekNumber }) => {
   const [projectionData, setProjectionData] = useState([]);
 
   useEffect(() => {
-    // Create a reference to the Firestore document based on the weekNumber
+   
     const weekDocRef = doc(firestore, 'Weeks', weekNumber);
 
-    // Fetch the data for the specified week from Firestore
     const fetchData = async () => {
       try {
         const docSnapshot = await getDoc(weekDocRef);

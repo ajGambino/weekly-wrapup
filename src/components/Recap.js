@@ -8,7 +8,7 @@ const Recap = ({ weekNumber }) => {
   useEffect(() => {
     const fetchRecapData = async () => {
       const weeksCollection = collection(firestore, 'Weeks');
-      const weekDoc = doc(weeksCollection, weekNumber); // Use the prop value
+      const weekDoc = doc(weeksCollection, weekNumber); 
 
       try {
         const docSnapshot = await getDoc(weekDoc);
@@ -24,7 +24,7 @@ const Recap = ({ weekNumber }) => {
     };
 
     fetchRecapData();
-  }, [weekNumber]); // Listen for changes in the weekNumber prop
+  }, [weekNumber]); 
 
   return (
     <div id="recap">

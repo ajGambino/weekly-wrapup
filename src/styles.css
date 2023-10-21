@@ -2,6 +2,8 @@
 
 body {
     scroll-behavior: smooth;
+    background: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2554.jpg?w=740&t=st=1697895769~exp=1697896369~hmac=a854cf8606eede65311a349c3a0cc83371239d59703273cf6d33c77b7cd52466") center / cover no-repeat;
+
   }
 
   p{
@@ -91,7 +93,7 @@ body {
   }
 
   #nuts {
-    background-color: rgb(1, 140, 158);
+    /*background-color: rgb(1, 140, 158);*/
     margin: .2rem;
     padding: .5rem; 
   }
@@ -177,7 +179,7 @@ font-weight: 500;
 
   #recap {
     color: black; 
-    background-color: rgb(1, 140, 158);
+    
     margin: .2rem;
     padding: .1rem;
   }
@@ -291,11 +293,11 @@ h1, h2 {
 }
 
 h1 {
-  font-weight: 600;
-  background-image: linear-gradient(to left, #18005a, #c1ebff);
-  color: transparent;
+  text-shadow: black 2px 3px;
+  color: white;
   background-clip: text;
   -webkit-background-clip: text;
+  margin: 0
 }
 
 h2 {
@@ -303,5 +305,5 @@ h2 {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  text-shadow: black 2px 3px;
+  
 }

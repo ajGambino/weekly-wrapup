@@ -11,7 +11,7 @@ const Nuts = ({ weekNumber }) => {
     DST: [],
   });
 
-  // Function to fetch topPlayers data
+
   const fetchTopPlayersData = async (week) => {
     const weekDoc = doc(firestore, 'Weeks', week);
     try {
