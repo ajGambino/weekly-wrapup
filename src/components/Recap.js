@@ -28,7 +28,7 @@ const Recap = ({ weekNumber }) => {
 
   return (
     <div id="recap">
-      <h2>Recap</h2>
+     
       <p>{recapContent}</p>
     </div>
   );

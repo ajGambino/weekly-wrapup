@@ -1,36 +1,24 @@
+// App.js
 import React from "react";
-import Navbar from "./Navbar"; 
-import Carp from "./components/Carp";
-import Nuts from "./components/Nuts";
-import Recap from "./components/Recap";
-/* import Sweat from "./components/Sweat"; */
+import Navbar from "./Navbar";
 import Footer from "./Footer";
-import Projections from "./components/Projections";
-import './styles.css';
 import Sportsbook from "./components/Sportsbook";
+import Archive from './components/Archive';
+import CurrentWeek from "./components/CurrentWeek";
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 function App() {
-  return ( <>
-  <Navbar />
-    <div className="App body-padding content-container">
-      <section id="recap">
-        <Recap weekNumber="Week7" /> 
-      </section>
-      <section id="projections">
-        <Projections weekNumber="Week7"/>
-      </section>
-      <section id="nuts">
-        <Nuts  weekNumber="Week7" />
-      </section>
-      <section id="carp">
-        <Carp weekNumber="Week7"/>
-      </section>
-    </div>
-      <section id="sportsbook" >
-        <Sportsbook />
-      </section>
+  return (
+    <Router>
+      <Navbar />
+      <div className="App body-padding content-container">
+        <Routes>
+          <Route path="/archive" element={<Archive />} />
+          <Route index element={<CurrentWeek />} />
+        </Routes>
+      </div>
       <Footer />
-     </>
+    </Router>
   );
 }
 
