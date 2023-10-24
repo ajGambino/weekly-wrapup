@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { collection, doc, getDocs, getDoc } from 'firebase/firestore'; // Import missing functions
+import { collection, doc,  getDoc } from 'firebase/firestore'; // Import missing functions
 import { firestore } from '../firebase';
 import '../styles.css';
 
