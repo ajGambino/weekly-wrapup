@@ -319,3 +319,7 @@ h2 {
   background-color: red;
   border: 20px solid  #005204;
 }
+
+img {
+  width: 300px;
+}
