@@ -14,7 +14,7 @@ const ImageCarousel = ({ images }) => {
   return (
     <div className="image-carousel">
       <button onClick={prevImage}>Previous</button>
-      <img src={images[activeIndex]} alt={`Image ${activeIndex + 1}`} />
+      <img src={images[activeIndex]} alt={` ${activeIndex + 1}`} />
       <button onClick={nextImage}>Next</button>
     </div>
   );
