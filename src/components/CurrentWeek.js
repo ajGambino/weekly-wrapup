@@ -8,21 +8,21 @@ import Sportsbook from "./Sportsbook";
 function CurrentWeek() {
   return (
     <div className="App body-padding content-container">
-        <h1>Week 7</h1>
+        <h1>Week 8</h1>
       <section id="recap">
-        <Recap weekNumber="Week7" />
+        <Recap weekNumber="Week8" />
       </section>
       <section id="projections">
-        <Projections weekNumber="Week7" />
+        <Projections weekNumber="Week8" />
       </section>
       <section id="nuts">
-        <Nuts weekNumber="Week7" />
+        <Nuts weekNumber="Week8" />
       </section>
       <section id="carp">
-        <Carp weekNumber="Week7" />
+        <Carp weekNumber="Week8" />
       </section>
       <section id="sportsbook">
-        <Sportsbook weekNumber="Week7" />
+        <Sportsbook weekNumber="Week8" />
       </section>
     </div>
   );

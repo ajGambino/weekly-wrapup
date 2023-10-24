@@ -1,26 +1,27 @@
 import React, { useEffect, useState } from 'react';
-import { collection, getDocs } from 'firebase/firestore';
+import { collection, doc, getDocs, getDoc } from 'firebase/firestore'; // Import missing functions
 import { firestore } from '../firebase';
 import '../styles.css';
 
-const Sportsbook = () => {
+const Sportsbook = ({ weekNumber }) => {
   const [matchups, setMatchups] = useState([]);
 
   useEffect(() => {
     const fetchMatchupsData = async () => {
-      const matchupsCollection = collection(firestore, 'Matchups');
-      const matchupsSnapshot = await getDocs(matchupsCollection);
+      const weeksCollection = collection(firestore, 'Weeks');
+      const weekDocRef = doc(weeksCollection, weekNumber);
 
-      const matchupsData = [];
-      matchupsSnapshot.forEach((doc) => {
-        matchupsData.push(doc.data());
-      });
-
-      setMatchups(matchupsData);
+      const weekDoc = await getDoc(weekDocRef); // Use getDoc to fetch a single document
+      if (weekDoc.exists()) {
+        const weekData = weekDoc.data();
+        if (weekData && weekData.matchups) {
+          setMatchups(weekData.matchups);
+        }
+      }
     };
 
     fetchMatchupsData();
-  }, []);
+  }, [weekNumber]);
 
   return (
     <div>
