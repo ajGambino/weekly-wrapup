@@ -24,7 +24,7 @@ function CurrentWeek() {
       </section>
       <section id="carp">
         <Carp weekNumber="Week9" />
-        <img src={"../images/image0 (1).jpeg"} />
+        <img src={"../images/image0 (1).jpeg"} alt={"craig"} />
       </section>
       <section id="sportsbook">
         <Sportsbook weekNumber="Week9" />
