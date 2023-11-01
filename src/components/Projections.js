@@ -4,7 +4,6 @@ import { firestore } from '../firebase';
 
 const Projections = ({ weekNumber }) => {
   const [projectionData, setProjectionData] = useState([]);
-
   useEffect(() => {
    
     const weekDocRef = doc(firestore, 'Weeks', weekNumber);
