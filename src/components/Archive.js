@@ -23,6 +23,25 @@ function Archive() {
   return (
     <div>
        <div className="App body-padding content-container">
+        <h1>Week 9</h1>
+      <section id="recap">
+        <Recap weekNumber="Week9" />
+      </section>
+      <section id="projections">
+        <Projections weekNumber="Week9" />
+      </section>
+      <section id="nuts">
+        <Nuts weekNumber="Week9" />
+      </section>
+      <section id="carp">
+        <Carp weekNumber="Week9" />
+        <img src={"../images/image0 (1).jpeg"} alt={"craig"} />
+      </section>
+      <section id="sportsbook">
+        <Sportsbook weekNumber="Week9" />
+      </section>
+    </div>
+       <div className="App body-padding content-container">
         <h1>Week 8</h1>
       <section id="recap">
         <Recap weekNumber="Week8" />
