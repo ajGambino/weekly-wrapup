@@ -12,22 +12,22 @@ function CurrentWeek() {
 
   return (
     <div className="App body-padding content-container">
-        <h1>Week 11</h1>
+        <h1>Week 12</h1>
       <section id="recap">
-        <Recap weekNumber="Week11" />
+        <Recap weekNumber="Week12" />
       </section>
       <section id="projections">
-        <Projections weekNumber="Week11" />
+        <Projections weekNumber="Week12" />
       </section>
       <section id="nuts">
-        <Nuts weekNumber="Week11" />
+        <Nuts weekNumber="Week12" />
       </section>
       <section id="carp">
-        <Carp weekNumber="Week11" />
-        <img src={"../images/wilding.jpeg"} alt={"wilding"} />
+        <Carp weekNumber="Week12" />
+        
       </section>
       <section id="sportsbook">
-        <Sportsbook weekNumber="Week11" />
+        <Sportsbook weekNumber="Week12" />
       </section>
     </div>
   );
