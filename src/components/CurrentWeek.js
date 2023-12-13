@@ -29,8 +29,9 @@ function CurrentWeek( ) {
       <section id="nuts">
         <Nuts weekNumber="Week15" />
       </section>
-      <section id="carp">
+      <section id="carp" className="carp2">
         <Carp weekNumber="Week15" />
+        <img  src="https://i.ibb.co/p454wFg/Untitled-design-removebg-preview.png" alt="brandon" />
       </section>
       <section id="sportsbook">
         <Sportsbook weekNumber="Week15" />
