@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap');
+
+
 /* Nav styles */
 
 body {
@@ -177,6 +180,12 @@ background-repeat: no-repeat;
   font-weight: 500;
 }
 
+span {
+  color: red;
+  font-size: smaller; 
+  font-family: 'Dancing Script', cursive;
+  
+}
 
 
 #carp p {
