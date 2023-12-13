@@ -193,7 +193,12 @@ background-repeat: no-repeat;
     text-shadow: 1px 1px black;
   }
 
-
+.recap2 {
+   background-image: url("https://media1.tenor.com/m/oyjFHu-E5yAAAAAd/jim-mora-mora.gif");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center center;
+}
 
   /* footer styles */
 .footer {
