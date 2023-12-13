@@ -7,15 +7,12 @@ import Sportsbook from "./Sportsbook";
 
 
 function CurrentWeek( ) {
-
-
-
   return (
     <div className="App body-padding content-container">
         <h1>Round 1</h1>
         <iframe
-        width="560"
-        height="315"
+        width="280"
+        height="154"
         src="https://www.youtube.com/embed/v993ci5Sm5Q?si=Cmg83DLclfIWJS9s"
         title="YouTube video player"
         frameBorder="0"
