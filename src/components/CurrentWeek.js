@@ -10,7 +10,7 @@ function CurrentWeek( ) {
   return (
     <div className="App body-padding content-container">
         <h1>Round 1</h1>
-        <iframe
+     <div className="video-container">   <iframe
         width="280"
         height="154"
         src="https://www.youtube.com/embed/v993ci5Sm5Q?si=Cmg83DLclfIWJS9s"
@@ -19,7 +19,7 @@ function CurrentWeek( ) {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
         autoPlay
-      ></iframe>
+      ></iframe></div>
 <section id="recap"  className="recap2">
   <Recap weekNumber="Week15" />
 </section>
