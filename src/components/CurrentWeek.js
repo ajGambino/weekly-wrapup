@@ -9,32 +9,23 @@ import Sportsbook from "./Sportsbook";
 function CurrentWeek( ) {
   return (
     <div className="App body-padding content-container">
-        <h1>Round 1</h1>
-     <div className="video-container">   <iframe
-        width="280"
-        height="154"
-        src="https://www.youtube.com/embed/v993ci5Sm5Q?si=Cmg83DLclfIWJS9s"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-        autoPlay
-      ></iframe></div>
+        <h1>Round 2</h1>
+   
 <section id="recap"  className="recap2">
-  <Recap weekNumber="Week15" />
+  <Recap weekNumber="Week16" />
 </section>
       <section id="projections">
-        <Playoffs weekNumber="Week15" />
+        <Playoffs weekNumber="Week16" />
       </section>
       <section id="nuts">
-        <Nuts weekNumber="Week15" />
+        <Nuts weekNumber="Week16" />
       </section>
       <section id="carp" className="carp2">
-        <Carp weekNumber="Week15" />
-        <img  src="https://i.ibb.co/p454wFg/Untitled-design-removebg-preview.png" alt="brandon" />
+        <Carp weekNumber="Week16" />
+      
       </section>
       <section id="sportsbook">
-        <Sportsbook weekNumber="Week15" />
+        <Sportsbook weekNumber="Week16" />
       </section>
     </div>
   );

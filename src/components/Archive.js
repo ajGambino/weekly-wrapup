@@ -5,7 +5,7 @@ import Recap from "./Recap";
 import Projections from "./Projections";
 import Sportsbook from "./Sportsbook";
 import ImageCarousel from "./ImageCarousel";
-
+import Playoffs from "./Playoffs";
 
 
 function Archive() {
@@ -22,6 +22,35 @@ function Archive() {
 
   return (
     <div>
+        <div className="App body-padding content-container">
+        <h1>Round 1</h1>
+     <div className="video-container">   <iframe
+        width="280"
+        height="154"
+        src="https://www.youtube.com/embed/v993ci5Sm5Q?si=Cmg83DLclfIWJS9s"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        autoPlay
+      ></iframe></div>
+<section id="recap"  className="recap2">
+  <Recap weekNumber="Week15" />
+</section>
+      <section id="projections">
+        <Playoffs weekNumber="Week15" />
+      </section>
+      <section id="nuts">
+        <Nuts weekNumber="Week15" />
+      </section>
+      <section id="carp" className="carp2">
+        <Carp weekNumber="Week15" />
+        <img  src="https://i.ibb.co/p454wFg/Untitled-design-removebg-preview.png" alt="brandon" />
+      </section>
+      <section id="sportsbook">
+        <Sportsbook weekNumber="Week15" />
+      </section>
+    </div>
        <div className="App body-padding content-container">
         <h1>Week 14</h1>
       <section id="recap">
