@@ -9,23 +9,23 @@ import Sportsbook from "./Sportsbook";
 function CurrentWeek( ) {
   return (
     <div className="App body-padding content-container">
-        <h1>Round 2</h1>
+        <h1>Championship Week</h1>
    
 <section id="recap"  className="recap2">
-  <Recap weekNumber="Week16" />
+  <Recap weekNumber="Week17" />
 </section>
       <section id="projections">
-        <Playoffs weekNumber="Week16" />
+        <Playoffs weekNumber="Week17" />
       </section>
       <section id="nuts">
-        <Nuts weekNumber="Week16" />
+        <Nuts weekNumber="Week17" />
       </section>
       <section id="carp" className="carp2">
-        <Carp weekNumber="Week16" />
-      
+        <Carp weekNumber="Week17" />
+        <img src={"../images/carp.jpg"} alt={"craig"} />
       </section>
       <section id="sportsbook">
-        <Sportsbook weekNumber="Week16" />
+        <Sportsbook weekNumber="Week17" />
       </section>
     </div>
   );

@@ -22,6 +22,26 @@ function Archive() {
 
   return (
     <div>
+            <div className="App body-padding content-container">
+        <h1>Round 2</h1>
+   
+<section id="recap"  className="recap2">
+  <Recap weekNumber="Week16" />
+</section>
+      <section id="projections">
+        <Playoffs weekNumber="Week16" />
+      </section>
+      <section id="nuts">
+        <Nuts weekNumber="Week16" />
+      </section>
+      <section id="carp" className="carp2">
+        <Carp weekNumber="Week16" />
+     
+      </section>
+      <section id="sportsbook">
+        <Sportsbook weekNumber="Week16" />
+      </section>
+    </div>
         <div className="App body-padding content-container">
         <h1>Round 1</h1>
      <div className="video-container">   <iframe
@@ -233,6 +253,7 @@ function Archive() {
           <Carp  weekNumber="Week5" />
         </section>
       </div>
+
     </div>
   );
 }
